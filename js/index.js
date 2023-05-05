@@ -5,7 +5,7 @@ const resultado = fetch("https://reqres.in/api/users?per_page=12")
 resultado
     .then(respuesta => respuesta.json())
     .then(respuestaJSON => {
-        respuestaJSON.data.map(
+        respuestaJSON.data.forEach(
             persona => {
                 const card = `
                 <article>
